@@ -15,7 +15,7 @@
 |          | 管理者による日報の投稿先指定解除   | admin/endpoint#destroy         | DELETE   | admin/endpoint/:id         | 
 | 組織     | 管理者による組織作成       | admin/organizations#create | POST     | /admin/organizations    | 
 |          | 管理者による組織削除       | admin/organization#destroy | DELETE   | /admin/organization/:id | 
-| ユーザー  | ユーザーによるユーザー作成 | users#create               | POST   | /users               |
+| ユーザー  | ユーザー新規登録 | users#create               | POST   | /users               |
 |          | ユーザーによるユーザー削除 | user#destroy               | DELETE   | /user/:id               | 
 |          | 管理者によるユーザー削除   | admin/user#destroy         | DELETE   | /admin/user/:id         | 
 
@@ -436,7 +436,7 @@ Forbidden
 }
 ```
 
-## ユーザー登録
+## ユーザー新規登録
 
 ### 機能概要
 - パラメーターを手動で入力して登録する
@@ -538,4 +538,5 @@ Forbidden
 "message": "Forbidden"
 }
 ```
+
 
